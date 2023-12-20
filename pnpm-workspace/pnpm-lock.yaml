@@ -9,11 +9,11 @@ importers:
   even:
     dependencies:
       no-yarn:
-        specifier: file:../no-yarn
-        version: file:no-yarn
+        specifier: ../no-yarn
+        version: link:../no-yarn
       odd:
-        specifier: file:../odd
-        version: file:odd
+        specifier: ../odd
+        version: link:../odd
 
   no-yarn:
     dependencies:
@@ -27,8 +27,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1
       no-yarn:
-        specifier: file:../no-yarn
-        version: file:no-yarn
+        specifier: ../no-yarn
+        version: link:../no-yarn
 
 packages:
 
@@ -276,19 +276,4 @@ packages:
       ansi-styles: 6.2.1
       string-width: 5.1.2
       strip-ansi: 7.1.0
-    dev: false
-
-  file:no-yarn:
-    resolution: {directory: no-yarn, type: directory}
-    name: no-yarn
-    hasBin: true
-    dev: false
-
-  file:odd:
-    resolution: {directory: odd, type: directory}
-    name: odd
-    requiresBuild: true
-    dependencies:
-      is-odd: 3.0.1
-      no-yarn: file:no-yarn
     dev: false

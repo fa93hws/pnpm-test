@@ -1,3 +1,4 @@
 packages:
   - odd
   - even
+  - no-yarn
