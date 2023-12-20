@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "odd": "link:../odd"
+    "odd": "file:../odd"
   }
 }

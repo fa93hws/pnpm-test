@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-even@../pnpm-workspace/even:
+"even@file:../pnpm-workspace/even":
   version "1.0.0"
   dependencies:
-    odd "link:../../../Library/Caches/Yarn/v6/npm-even-1.0.0-d731b2ca-ab38-49a7-8c4a-853dd2e63571-1703050996547/node_modules/odd"
+    odd "file:../../../Library/Caches/Yarn/v6/npm-even-1.0.0-9f9c0ef9-ce49-4dfe-89ba-a50a49baf121-1703062493900/node_modules/odd"
 
 is-number@^6.0.0:
   version "6.0.0"
@@ -19,6 +19,7 @@ is-odd@^3.0.1:
   dependencies:
     is-number "^6.0.0"
 
-"odd@link:../pnpm-workspace/odd":
-  version "0.0.0"
-  uid ""
+"odd@file:../pnpm-workspace/odd":
+  version "1.0.0"
+  dependencies:
+    is-odd "^3.0.1"

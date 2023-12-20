@@ -9,16 +9,8 @@ importers:
   even:
     dependencies:
       odd:
-        specifier: link:../odd
-        version: link:../odd
-
-  local-dep-1: {}
-
-  local-dep-2:
-    dependencies:
-      is-odd:
-        specifier: ^3.0.1
-        version: 3.0.1
+        specifier: file:../odd
+        version: file:odd
 
   odd:
     dependencies:
@@ -38,4 +30,11 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       is-number: 6.0.0
+    dev: false
+
+  file:odd:
+    resolution: {directory: odd, type: directory}
+    name: odd
+    dependencies:
+      is-odd: 3.0.1
     dev: false
