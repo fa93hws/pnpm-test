@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "no-yarn": "file:../no-yarn",
+    "no-yarn": "../no-yarn",
     "is-odd": "^3.0.1"
   }
 }

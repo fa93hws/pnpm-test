@@ -89,11 +89,11 @@ emoji-regex@^9.2.2:
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"
   integrity sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==
 
-"even@file:../pnpm-workspace/even":
+even@../pnpm-workspace/even:
   version "1.0.0"
   dependencies:
-    no-yarn "file:../../../Library/Caches/Yarn/v6/npm-even-1.0.0-39488646-b9e8-48b3-a252-91a0112a4571-1703067116350/node_modules/no-yarn"
-    odd "file:../../../Library/Caches/Yarn/v6/npm-even-1.0.0-39488646-b9e8-48b3-a252-91a0112a4571-1703067116350/node_modules/odd"
+    no-yarn "../no-yarn"
+    odd "../odd"
 
 foreground-child@^3.1.0:
   version "3.1.1"
@@ -162,16 +162,16 @@ minimatch@^9.0.1:
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.0.4.tgz#dbce03740f50a4786ba994c1fb908844d27b038c"
   integrity sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==
 
-"no-yarn@file:../pnpm-workspace/no-yarn":
+no-yarn@../no-yarn, no-yarn@../pnpm-workspace/no-yarn:
   version "1.0.0"
   dependencies:
     rimraf "^5.0.5"
 
-"odd@file:../pnpm-workspace/odd":
+odd@../odd, odd@../pnpm-workspace/odd:
   version "1.0.0"
   dependencies:
     is-odd "^3.0.1"
-    no-yarn "file:../../../Library/Caches/Yarn/v6/npm-odd-1.0.0-869aa87b-476f-4d0a-9e51-dd0e59fa0c7a-1703067116376/node_modules/no-yarn"
+    no-yarn "../no-yarn"
 
 path-key@^3.1.0:
   version "3.1.1"
@@ -211,6 +211,7 @@ signal-exit@^4.0.1:
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -229,6 +230,7 @@ string-width@^5.0.1, string-width@^5.1.2:
     strip-ansi "^7.0.1"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==

@@ -4,6 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "even": "file:../pnpm-workspace/even"
+    "even": "../pnpm-workspace/even"
+  },
+  "resolutions": {
+    "no-yarn": "../pnpm-workspace/no-yarn",
+    "odd": "../pnpm-workspace/odd"
   }
 }
