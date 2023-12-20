@@ -19,3 +19,10 @@ For pnpm packages
 4. Run `node index.js` under `pnpm-workspace/even`, `console.log(isOdd(3));` prints `true`
 5. Make a change in `pnpm-workspace/odd/index.js`
 6. Run `node index.js` again under `pnpm-workspace/even`, change in step 5 is making difference as expected.
+
+Disallow running `yarn` under pnpm package
+1. Remove all `node_modules` in all children packages, if there is any
+2. Run `yarn` under `pnpm-workspace/even`, and it failed with "This package has been migrated to pnpm, please use pnpm instead of yarn.". `yarn.lock` and `node_modules` will not be presented in the directory.
+3. Run `pnpm install`, everything works fine.
+4. Remove all `node_modules` in all children packages
+5. Run `yarn` under `a-yarn-package`, everything works fine.
