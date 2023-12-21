@@ -1,4 +1,4 @@
 packages:
-  - odd
+  - sub-dir/odd
   - even
   - no-yarn

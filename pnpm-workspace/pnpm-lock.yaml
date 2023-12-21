@@ -12,8 +12,8 @@ importers:
         specifier: ../no-yarn
         version: link:../no-yarn
       odd:
-        specifier: ../odd
-        version: link:../odd
+        specifier: ../sub-dir/odd
+        version: link:../sub-dir/odd
 
   no-yarn:
     dependencies:
@@ -21,14 +21,14 @@ importers:
         specifier: ^5.0.5
         version: 5.0.5
 
-  odd:
+  sub-dir/odd:
     dependencies:
       is-odd:
         specifier: ^3.0.1
         version: 3.0.1
       no-yarn:
-        specifier: ../no-yarn
-        version: link:../no-yarn
+        specifier: ../../no-yarn
+        version: link:../../no-yarn
 
 packages:
 

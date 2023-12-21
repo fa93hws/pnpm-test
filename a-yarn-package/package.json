@@ -8,6 +8,6 @@
   },
   "resolutions": {
     "no-yarn": "../pnpm-workspace/no-yarn",
-    "odd": "../pnpm-workspace/odd"
+    "odd": "../pnpm-workspace/sub-dir/odd"
   }
 }

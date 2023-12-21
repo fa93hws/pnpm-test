@@ -93,7 +93,7 @@ even@../pnpm-workspace/even:
   version "1.0.0"
   dependencies:
     no-yarn "../no-yarn"
-    odd "../odd"
+    odd "../sub-dir/odd"
 
 foreground-child@^3.1.0:
   version "3.1.1"
@@ -162,16 +162,16 @@ minimatch@^9.0.1:
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.0.4.tgz#dbce03740f50a4786ba994c1fb908844d27b038c"
   integrity sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==
 
-no-yarn@../no-yarn, no-yarn@../pnpm-workspace/no-yarn:
+no-yarn@../../no-yarn, no-yarn@../no-yarn, no-yarn@../pnpm-workspace/no-yarn:
   version "1.0.0"
   dependencies:
     rimraf "^5.0.5"
 
-odd@../odd, odd@../pnpm-workspace/odd:
+odd@../pnpm-workspace/sub-dir/odd, odd@../sub-dir/odd:
   version "1.0.0"
   dependencies:
     is-odd "^3.0.1"
-    no-yarn "../no-yarn"
+    no-yarn "../../no-yarn"
 
 path-key@^3.1.0:
   version "3.1.1"

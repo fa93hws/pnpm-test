@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "no-yarn": "../no-yarn",
-    "odd": "../odd"
+    "odd": "../sub-dir/odd"
   }
 }
