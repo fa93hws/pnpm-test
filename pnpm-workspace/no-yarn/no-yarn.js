@@ -7,6 +7,7 @@ if (process.env.npm_execpath == null || !process.env.npm_execpath.endsWith('yarn
 
 // yarn will run yarn in node_modules for its dependency
 if (process.env.PWD == null || process.env.PWD.includes('node_modules')) {
+  rimrafSync('node_modules');
   return true;
 }
 
